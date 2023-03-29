@@ -43,4 +43,6 @@ p {
   /* 일부 스타일은 inherit(상속)된다. */
   font-size: 10px;
   color: white;
+
+  box-shadow: 5px 5px 5px gray;
 }
