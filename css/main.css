@@ -1,0 +1,25 @@
+.profile {
+  width: 100px;
+  /* 이미지 가운데 정렬 */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 클래스셀렉터 */
+.name {
+  text-align: center;
+  font-size: 16px;
+}
+
+/* 태그셀렉터 */
+p {
+  text-align: center;
+}
+
+/* id셀렉터 */
+#special {
+  color: aquamarine;
+}
+
+/* 스타일이 겹칠 경우 우선순위따라 정해짐 id>class>tag (참고)인라인스타일 우선순위가 가장높다. */
