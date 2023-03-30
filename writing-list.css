@@ -1,0 +1,46 @@
+.container {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.writer {
+  margin: 2px;
+}
+
+.time {
+  margin: 2px;
+}
+
+.blog-content {
+  width: 80%;
+  float: left;
+}
+
+.blog-img {
+  width: 20%;
+  float: left;
+}
+
+.blog-profile {
+  float: left;
+}
+
+.blog-name {
+  float: left;
+  margin-left: 5px;
+}
+
+.blog-profile {
+  width: 40px;
+  border-radius: 20px;
+}
+
+.blog-write {
+  clear: both;
+  margin-top: 50px;
+}
+
+.watch {
+  width: 100%;
+}
