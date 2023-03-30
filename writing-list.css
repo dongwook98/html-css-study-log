@@ -14,11 +14,15 @@
 
 .blog-content {
   width: 80%;
+  height: 200px;
+  /* background-color: aqua; */
   float: left;
 }
 
 .blog-img {
   width: 20%;
+  height: 200px;
+  /* background: green; */
   float: left;
 }
 
@@ -37,8 +41,7 @@
 }
 
 .blog-write {
-  clear: both;
-  margin-top: 50px;
+  margin-top: 5px;
 }
 
 .watch {
