@@ -5,28 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/inline-block.css" />
+    <link rel="stylesheet" href="./css/inline-block.css" />
   </head>
   <body>
     <!-- inline-block 사용해서 가로로 배치해보자
     inline-block 사용하면 박스사이 공백제거가 귀찮음
-
     inline-block 사용시 공백제거 방법 1. 박스사이 주석기호 활용
     inline-block 사용시 공백제거 방법 2. 부모태그에 font-size:0px; 
     (font-size는 inherit이 되는속성 div사이에있는 공백들도 0px이 됌)
-
     -->
+
     <div class="container">
       <div class="header"></div>
-      <div class="left-menu"></div><!--
-   --><div class="right">
-      <!-- inline-block 박스 안에 글자쓰면 이상해짐 why?
+      <div class="left-menu"></div>
+      <!--주석으로공백제거가능(프리티어때문에자동정렬됨;;)
+      -->
+      <div class="right">
+        <!-- inline-block 박스 안에 글자쓰면 이상해짐 why?
       html에도 baseline 존재
       baseline이 옆에 존재하면 display: inline-block 요소들이 baseline 위에 오려고함;;
-
       해결방법 : vertical-align: top;
       -->
-        <p>안녕하세유 p</p>
+        <p>안녕하세유p</p>
       </div>
       <div class="footer"></div>
     </div>
