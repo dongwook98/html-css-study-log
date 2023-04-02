@@ -15,12 +15,12 @@
     (font-size는 inherit이 되는속성 div사이에있는 공백들도 0px이 됌)
     -->
 
-    <div class="container">
+    <div class="container" style="font-size: 0px">
       <div class="header"></div>
       <div class="left-menu"></div>
-      <!--주석으로공백제거가능(프리티어때문에자동정렬됨;;)
+      <!--주석으로공백제거가능(프리티어때문에자동정렬됨;;) 부모태그에 폰트사이트0픽셀적용해서 해결 
       -->
-      <div class="right">
+      <div class="right" style="font-size: 12px">
         <!-- inline-block 박스 안에 글자쓰면 이상해짐 why?
       html에도 baseline 존재
       baseline이 옆에 존재하면 display: inline-block 요소들이 baseline 위에 오려고함;;

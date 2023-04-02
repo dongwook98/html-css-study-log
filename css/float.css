@@ -30,6 +30,6 @@
   width: 100%;
   height: 100px;
   background-color: grey;
-  /* float 다음에 오는 요소에게 주면 float로 발생하는 이상한 현상 해결가능 */
+  /* clear:both; float 다음에 오는 요소에게 주면 float로 발생하는 이상한 현상 해결가능 */
   clear: both;
 }
