@@ -1,49 +1,33 @@
 .container {
   width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.writer {
-  margin: 2px;
-}
-
-.time {
-  margin: 2px;
+  margin: auto;
 }
 
 .blog-content {
   width: 80%;
-  height: 200px;
+  height: 150px;
   /* background-color: aqua; */
   float: left;
 }
 
 .blog-img {
   width: 20%;
-  height: 200px;
-  /* background: green; */
+  height: 150px;
+  /* background-color: blue; */
   float: left;
 }
 
-.blog-profile {
+.blog-user-img {
+  width: 50px;
+  border-radius: 100%;
   float: left;
 }
 
 .blog-name {
   float: left;
-  margin-left: 5px;
 }
 
-.blog-profile {
-  width: 40px;
-  border-radius: 20px;
-}
-
-.blog-write {
-  margin-top: 5px;
-}
-
-.watch {
-  width: 100%;
+.blog-user-content {
+  clear: both;
+  padding: 1px;
 }

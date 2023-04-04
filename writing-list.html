@@ -10,25 +10,23 @@
   <body>
     <div class="container">
       <div class="blog-content">
-        <div>
-          <img src="./img/me.jpeg" alt="" class="blog-profile" />
+        <div class="blog-profile">
+          <img src="./img/me.jpeg" class="blog-user-img" />
           <div class="blog-name">
-            <h4 class="writer">강동욱</h4>
-            <p class="time">1시간 전</p>
+            <!-- h4, p 태그 기본마진 수정 -->
+            <h4 style="margin: 5px">강동욱</h4>
+            <p style="margin: 5px">1시간 전</p>
           </div>
         </div>
-        <!-- float 관련 문제(마진 주면 제대로 안 밀림) 
-            해결방법: clear:both 넣은 <div> 추가하는걸 추천
-        -->
-        <div style="clear: both"></div>
-        <div class="blog-write">
-          <h3>시계 팔아요.</h3>
-          <p>가격은 2만원입니다. 하자없어요.</p>
+        <div class="blog-user-content">
+          <h3 style="margin-top: 30px" id="유니크">시계 팔아요!</h3>
+          <p>사이즈는 프리사이즈 사용감 별로 없어요~~</p>
         </div>
       </div>
       <div class="blog-img">
-        <img src="./img/watch.avif" class="watch" />
+        <img src="./img/watch.avif" width="100%" height="100%" />
       </div>
+      <div style="clear: both"></div>
     </div>
   </body>
 </html>
