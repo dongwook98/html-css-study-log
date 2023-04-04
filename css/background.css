@@ -87,16 +87,41 @@
 .explain-box {
   background-color: lightgray;
   margin: auto;
-  padding: 10px;
+  padding: 20px;
   border-radius: 5px;
   text-align: center;
-  width: 80%;
-  max-width: 700px;
   position: relative;
   top: -120px;
+
+  /* width %의 문제는 PC사이즈에서 너무 커질수있음 -> 커지지않게 최대폭 지정하면됨
+   * max-width 로 최대폭 지정가능
+   * ⭐️ (중요) width는 content 영역의 너비를 의미한다.
+   * 🌈 (해결책) content부분만 width로 설정하지 말고 padding, border 포함하라고 시키면됨 ->
+   * box-sizing: border-box;
+   */
+  box-sizing: border-box;
+  width: 80%;
+  max-width: 700px;
 
   /* z-index 공중에 떠있는 애들이 많으면 누가 맨 앞에 올지 지정해야한다.
    * z-index 로 높으수록 앞에 온다.
    */
   z-index: 1;
+}
+
+/* css Nomalize */
+/* (참고) 브라우저마다 디자인이 다르게 보일 수 있음 실제로 버튼,인풋 태그는 크롬과 파이어폭스 기본 디자인이 다름 */
+/* 숙련자들은 CSS 파일 맨 위에 호환성 이슈 해결책부터 첨부하는 경우가 있음 (검색 키워드 : css nomalize)*/
+
+/* CSS Reset : 이렇게 해놓고 개발시작하면 편함(박스사이즈재단을 컨텐트 크기로 하는게아는게 아니라 실제 박스크기만큼 할 수 있기 때문 */
+div {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
+html {
+  line-height: 1.15; /*기본 행간 높이*/
 }
