@@ -14,10 +14,10 @@
   background: cornflowerblue;
   display: inline-block;
   /* vertical-align => 상하정렬 */
-  vertical-align: top;
+  /* vertical-align: top; */
 }
 
-.right {
+.content {
   width: 80%;
   height: 400px;
   background: coral;
