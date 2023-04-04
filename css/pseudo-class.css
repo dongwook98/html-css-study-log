@@ -1,0 +1,53 @@
+.btn {
+  padding: 15px;
+  font-size: 20px;
+  background-color: orange;
+  border: none;
+  color: white;
+  border-radius: 10px;
+
+  /* 커서변경 */
+  cursor: pointer;
+}
+
+/* 마우스올릴 때 스타일은 :hover(pseudo-class) */
+.btn:hover {
+  background-color: chocolate;
+}
+
+/* 커서찍혀있을 때 스타일은 :focus */
+.btn:focus {
+  background-color: grey;
+}
+
+/* 클릭중 스타일은 :active */
+.btn:active {
+  background-color: brown;
+  border: 2px solid black;
+}
+
+/* :hover :focus :active 넣을 땐 순서가 중요함 (hofa로 외움!)*/
+
+/* <input> */
+.input-test {
+  font-size: 20px;
+}
+
+.input-test:focus {
+  border-bottom: 5px solid red;
+}
+
+/* <a>  */
+.custom-link {
+  text-decoration: none;
+}
+
+/* 방문 전 링크 스타일링은 :link */
+.custom-link:link {
+  color: aqua;
+}
+
+/* 방문 후 링크 스타일링은 :visited */
+.custom-link:visited {
+  color: black;
+}
