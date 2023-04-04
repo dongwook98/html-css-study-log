@@ -1,0 +1,37 @@
+/* 커스텀 폰트넣는 법 */
+/* 내가 준비한 폰트파일을 CSS에서 사용가능하게 등록하는 과정임 */
+
+/* 한글 폰트 ttf 파일은 용량이 너무 큼 1~2개만 써야함.. ->  용량 줄이려면 .woff 써야함*/
+@font-face {
+  font-family: '나눔스퀘어';
+  src: url(../font/NanumSquareAcB.woff);
+}
+
+/* IE 옛 버전에서도 호환성 좋게 폰트를 사용하려면 */
+/* @font-face {
+  font-family: 'NanumSquare';
+  font-weight: 400;
+  src: url(NanumSquareR.eot);
+  src: url(NanumSquareR.eot?#iefix) format('embedded-opentype'),
+    url(NanumSquareR.woff) format('woff'),
+    url(NanumSquareR.ttf) format('truetype');
+} */
+
+/* 폰트를 빠르게 사용하기 위한 Google Fonts */
+/* 구글이 호스팅해주는 폰트가 미리 정의된 CSS 파일을 가져다 쓰는 것이라 */
+/* 내 사이트의 트래픽을 절약할 수 있다는게 장점이고 */
+/* 크롬브라우저는 이미 방문한 사이트는 캐싱해주기 때문에 많은 사람들이 이용할 수록 더 빠르게 폰트를 이용할 수 있다.  */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+
+body {
+  margin: 0px;
+  /* 폰트 여러개 써두면 안정적임. 
+   * 페이지 방문자들의 PC에 굴림체가 설치되어있어야 이용가능 -> 사용자의 컴퓨터에 설치되지 않은 폰트를 사이트에서 이용하게 하려면 
+   * @font-face 사용!
+   */
+  font-family: 'Nanum Brush Script', '나눔스퀘어', 'dotum', 'arial';
+}
+
+/* 폰트 Anti-aliasing 에 대해 */
+/* 글자를 정말 매우 살짝 회전시키면 윈도우에선 안티앨리어싱 된 듯한 느낌을 준다. 부드러워짐  */
+/* transform : rotate(0.04deg);  */
