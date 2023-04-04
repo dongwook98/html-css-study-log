@@ -31,6 +31,9 @@
 
   /* margin collapse 현상 해결방법 => 패딩 주기 (테두리 안붙게 한거임) */
   padding: 1px;
+
+  /* position:absolute 내 부모 태그 중에 position:relative 가진 부모 기준 (기준 부모) */
+  position: relative;
 }
 
 .main-title {
@@ -58,19 +61,22 @@
   position:relative 내 원래 위치를 기준으로 이동하세요~ (기준 현 위치)
   position:static 좌표이동 x (기준 없음)
   position:fixed 현재 화면이 기준 (기준 viewport)
-  position:absolute 내 부모 태그 중에 position:relative 가진 부모 기준 (기준 부모)
+  ⭐️ position:absolute 내 부모 태그 중에 position:relative 가진 부모 기준 (기준 부모)
 
-  (참고)
-  position:absolute 준 요소
-  가운데 정렬 하려면
+  (참고) position:absolute 준 요소 가운데 정렬 하려면
   left: 0;
   rigth: 0;
   margin: auto;
   width: ~~~;
   */
-  position: relative;
-  top: 100px;
-  left: 300px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+  /* left: 300px; */
 }
 
 .explain-box {
@@ -81,6 +87,6 @@
   width: 80%;
   max-width: 700px;
   position: relative;
-  top: -50px;
+  top: -40px;
   margin: auto;
 }
