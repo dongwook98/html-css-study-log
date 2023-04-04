@@ -1,0 +1,68 @@
+table {
+  /* <table>은 기본적으로 틈이 존재 없애려면 border-collapse:collapse */
+  border-collapse: collapse;
+}
+
+.white-background td,
+.white-background th {
+  color: skyblue;
+  border: none;
+  border-bottom: 1px solid lightblue;
+  padding: 20px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.cart-background {
+  width: 80%;
+  margin: auto;
+  background-color: lightblue;
+  box-sizing: border-box;
+  padding: 40px;
+}
+
+#cart-title {
+  color: midnightblue;
+}
+
+.white-background {
+  width: 100%;
+
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  box-sizing: border-box;
+}
+.brand {
+  color: black;
+}
+
+.amount {
+  text-align: right;
+}
+
+.total {
+  color: midnightblue;
+  font-weight: bold;
+}
+
+.cart-userinterface {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.cart-edit {
+  width: 50%;
+  float: left;
+  vertical-align: middle;
+  color: midnightblue;
+}
+
+.cart-button {
+  float: right;
+  padding: 20px;
+  background-color: midnightblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
