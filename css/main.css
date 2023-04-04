@@ -8,8 +8,14 @@
 
 /* 클래스셀렉터 */
 .title {
+  /* 글자 가운데 정렬 */
   text-align: center;
   font-size: 16px;
+  /* 글자 자간 조절 */
+  letter-spacing: 1px;
+  /* 글꼴 */
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /* 태그셀렉터 */
@@ -19,30 +25,34 @@ p {
 
 /* id셀렉터 */
 #special {
-  color: aquamarine;
+  color: cornflowerblue;
+  font-weight: 900;
 }
 
 /* 스타일이 겹칠 경우 우선순위따라 정해짐 id>class>tag (참고)인라인스타일 우선순위가 가장높다. */
 
 /* div 박스에 자주쓰이는 속성들 */
-/* <div>,<p>,<h> display:block 기본 */
+/* <div>,<p>,<h1> display:block 기본 */
 /* display:block이란? 가로행을 전부 차지하게해주세요 라는 뜻 */
 .box {
-  width: 200px;
+  width: 450px;
   background: cadetblue;
-  margin-left: 10px;
+  margin: 20px;
   padding: 40px;
   border: 4px solid black;
   border-radius: 15px;
 
   /* div 가운데 정렬 */
-  /* display: block; 생략 */
+  /* div는 display: block; 생략가능 */
   margin-left: auto;
   margin-right: auto;
 
   /* 일부 스타일은 inherit(상속)된다. */
-  font-size: 10px;
+  /* 부모태그에 스타일줘도 일부 스타일은 inherit(상속) 된다. */
+  font-size: 20px;
+  font-weight: 200;
   color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
   box-shadow: 5px 5px 5px gray;
 }
