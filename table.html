@@ -8,7 +8,17 @@
     <link rel="stylesheet" href="./css/table.css" />
   </head>
   <body>
-    <!-- tr 가로 행 td 세로 열 -->
+    <!-- 가로 행 만들 땐 <tr> -->
+    <!-- 세로 열 만들 땐 <td> -->
+    <!-- 제목용 세로 열 만들 땐 <th> -->
+    <!-- 제목 행은 <thead> 안에 넣으면 좋음 -->
+    <!-- 일반 행은 <tbody> 안에 넣으면 좋음 -->
+    <!-- <table>은 기본적으로 틈이 존재 없애려면 -> border-collapse: collapse; -->
+    <!-- 셀 안의 요소 상하정렬 하려면 -> vertical-align: top/middle/bottom; -->
+    <!-- vertical-align 세로정렬할 때 씁니다만..  -->
+    <!-- (용도1) inline/inline-block 요소 간의 세로정렬할 때 vertical-align 쓴다. -->
+    <!-- display:inline : 항상 옆으로 채워지는 폭과 너비가 없는 요소 -->
+    <!-- (용도2) table 안에서 세로정렬할 때 vertical-align 쓴다. (top/middle/bottom만 가능) -->
 
     <div>
       <p style="font-size: 50px">
@@ -17,18 +27,24 @@
       </p>
     </div>
 
-    <img style="display: inline" src="./img/logo.png" width="100" height="32" />
-    <span style="vertical-align: middle">image with a default alignment.</span>
+    <div>
+      <img src="./img/logo.png" width="100" height="32"
+        <span style="font-size: 20px; vertical-align: middle;">
+          image with a default alignment.
+        </span>
+      </img>
+    </div>
 
     <div class="cart-background">
-      <h2 id="cart-title">Your shopping cart</h2>
-      <table class="white-background">
+      <h3 id="cart-title">Your shopping cart</h3>
+      <table class="cart-table">
         <thead>
           <tr>
-            <th colspan="2">ITEM</th>
+            <th></th>
+            <th>ITEM</th>
             <th>AMOUNT</th>
             <th>PRICE</th>
-            <th>TOTAL</th>
+            <th class="total">TOTAL</th>
           </tr>
         </thead>
         <tbody>
@@ -37,8 +53,8 @@
               <img src="./img/106827445_1.png" style="width: 100px" />
             </td>
             <td>
-              <h3 class="brand">SONY</h3>
-              <p>FE 70-200 mm F2.8 GM OSS</p>
+              <strong class="brand">SONY</strong>
+              <p style="margin: 0;">FE 70-200 mm F2.8 GM OSS</p>
             </td>
 
             <td class="amount">1</td>
@@ -48,17 +64,17 @@
           <tr>
             <td><img src="./img/2.avif" style="width: 100px" /></td>
             <td>
-              <h3 class="brand">SONY</h3>
-              <p>Sonnar T* E 24mm F1.8 ZA</p>
+              <strong class="brand">SONY</strong>
+              <p style="margin: 0;">Sonnar T* E 24mm F1.8 ZA</p>
             </td>
             <td class="amount">1</td>
             <td>$989.00</td>
             <td class="total">$989.00</td>
           </tr>
           <tr>
+            <!-- td 하나로 합치기 <td colspan=""> -->
             <td
               class="total"
-              style="text-align: right; border-bottom: none"
               colspan="5"
             >
               $2968.00
@@ -66,11 +82,10 @@
           </tr>
         </tbody>
       </table>
-      <div class="cart-userinterface">
+      <div class="cart-userinterface" style="font-size: 0px;">
         <a href="#" class="cart-edit">Edit your shopping cart</a>
         <button class="cart-button">Choose payment method</button>
       </div>
-      <div style="clear: both"></div>
     </div>
   </body>
 </html>

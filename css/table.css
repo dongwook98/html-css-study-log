@@ -3,66 +3,90 @@ table {
   border-collapse: collapse;
 }
 
-.white-background td,
-.white-background th {
+.cart-table td,
+.cart-table th {
   color: skyblue;
   border: none;
   border-bottom: 1px solid lightblue;
   padding: 20px;
-  font-size: 12px;
-  text-align: center;
+  font-size: 14px;
 }
 
 .cart-background {
-  width: 80%;
-  margin: auto;
+  width: 100%;
+  margin: 100px auto;
   background-color: lightblue;
   box-sizing: border-box;
-  padding: 40px;
+  padding: 30px;
 }
 
 #cart-title {
+  width: 100%;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
   color: midnightblue;
 }
 
-.white-background {
+.cart-table {
+  box-sizing: border-box;
   width: 100%;
-
+  max-width: 700px;
   margin: 0 auto;
   border-radius: 10px;
-  background-color: whitesmoke;
-  box-sizing: border-box;
+  background-color: white;
 }
+
 .brand {
   color: black;
+  font-weight: 900;
+  margin-bottom: 0;
 }
 
 .amount {
   text-align: right;
 }
 
-.total {
+.cart-table td[class='total'] {
   color: midnightblue;
   font-weight: bold;
+  text-align: right;
 }
 
 .cart-userinterface {
   width: 100%;
-  margin-top: 15px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
 }
 
 .cart-edit {
+  /* 가로 정렬 */
   width: 50%;
-  float: left;
+  display: inline-block;
+  font-size: 16px;
+  /* 세로축 정렬 */
   vertical-align: middle;
+  /* 디자인 */
   color: midnightblue;
 }
 
 .cart-button {
-  float: right;
-  padding: 20px;
+  /* 가로 정렬 */
+  width: 50%;
+  display: inline-block;
+  /* 버튼 디자인 */
+  padding: 15px;
   background-color: midnightblue;
   color: white;
   border: none;
   border-radius: 5px;
+}
+
+/* nth-child(n)셀렉터 
+ * n번째 등장하는 요소만 스타일링 할 때
+ */
+.cart-table th:nth-child(2) {
+  width: 400px;
 }
