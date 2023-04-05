@@ -1,0 +1,55 @@
+.flex-item {
+  width: 100px;
+  height: 100px;
+  background-color: gray;
+  margin: 5px;
+}
+
+/* 부모에 display: flex 주면 가로로 배치쉬움! */
+.flex-container {
+  display: flex;
+  height: 500px;
+  /* flex 이용시 정렬 */
+  /* justify-content: center; */
+  /* flex 이용시 세로배치 */
+  /* flex-direction: column; */
+  /* width 크면 밑으로 보내고 싶을 때 */
+  /* flex-wrap: wrap; */
+  /* flex 이용시 상하정렬 */
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-container {
+  display: flex;
+  background-color: pink;
+  color: white;
+  height: 40px;
+  align-items: center;
+  padding: 10px;
+}
+
+.nav-item {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.nav-menu {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav2-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  background-color: orange;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px;
+}
