@@ -9,13 +9,20 @@
 .flex-container {
   display: flex;
   height: 500px;
+  background-color: blueviolet;
   /* flex 이용시 정렬 */
   /* justify-content: center; */
+
   /* flex 이용시 세로배치 */
   /* flex-direction: column; */
+
   /* width 크면 밑으로 보내고 싶을 때 */
   /* flex-wrap: wrap; */
+
   /* flex 이용시 상하정렬 */
+  /* aling-items: center; */
+
+  /* flex 이용시 가로,세로 가운데 정렬 */
   justify-content: center;
   align-items: center;
 }
